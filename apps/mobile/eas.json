@@ -78,6 +78,18 @@
       "env": {
         "RELEASE": "1"
       }
+    },
+    "research": {
+      "extends": "base",
+      "resourceClass": "default",
+      "channel": "research",
+      "distribution": "internal",
+      "env": {
+        "PREVIEW": "1",
+        "DEBUG": "*,-babel,-babel*",
+        "EXPO_NO_TELEMETRY": "true",
+        "SENTRY_ALLOW_FAILURE": "true"
+      }
     }
   },
   "submit": {
